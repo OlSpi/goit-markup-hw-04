@@ -45,10 +45,7 @@ body {
 
 .boxflex {
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
 }
-
 .studio-link {
   font-family: "Raleway";
   font-weight: 700;
@@ -93,9 +90,9 @@ body {
 
 .menu2 {
   display: flex;
-  gap: 50px;
-  margin-top: 32px;
-  margin-left: 371px;
+  gap: 30px;
+  margin-top: 33px;
+  margin-left: 345px;
 }
 
 .mail-tel {
@@ -105,13 +102,14 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--text-color);
-  display: block;
+  fill:var(--text-color);
+  display: flex;
+  gap: 10px;
 }
-.mail-tel:hover {
+.mail-tel:hover,
+:focus {
   color: var(--link-color);
-}
-.mail-tel:focus {
-  color: var(--link-color);
+  fill: var(--link-color);
 }
 
 /*sekcjia zamow usluge*/
@@ -310,7 +308,7 @@ body {
 }
 .social:hover,
 :focus {
-  fill: #ffffff;
+  fill:var(--background-color);
   background-color: var(--link-color);
   cursor: pointer;
 }
@@ -335,8 +333,8 @@ body {
 }
 .icon-logo:hover,
 :focus {
-  border: 1px solid #2196f3;
-  fill: #2196f3;
+  border: 1px solid var(--link-color);
+  fill: var(--link-color);
   cursor: pointer;
 }
 
@@ -346,6 +344,9 @@ body {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.flex-footer {
+  display: flex;
 }
 .studio-link2 {
   font-family: "Raleway";
@@ -359,7 +360,9 @@ body {
   margin-bottom: 20px;
   padding-left: 15px;
 }
-
+.color-studio2 {
+  color: var(--background-color);
+}
 .address,
 .mail-tel-color {
   font-family: "Roboto";
@@ -376,9 +379,7 @@ body {
 .address:hover {
   color: var(--link-color);
 }
-.color-studio2 {
-  color: var(--background-color);
-}
+
 .mail-tel-color {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -388,8 +389,10 @@ body {
 .mail-tel-color:focus {
   color: var(--link-color);
 }
-address {
-  margin-bottom: 60px;
+
+.size-social {
+  padding-top: 12px;
+  padding-left: 70px;
 }
 
 .flex-social-footer {
@@ -404,19 +407,26 @@ address {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color:var(--background-color);
   margin: 0;
 }
 
 .social-footer {
   width: 40px;
   height: 40px;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  fill: #ffffff;
-  background-color: var(--icon-color);
+  fill:var(--background-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-footer:hover,
+:focus {
+  fill:var(--background-color);
+  background-color: var(--link-color);
+  cursor: pointer;
 }
 
 /*button menu */
@@ -460,6 +470,8 @@ address {
   background: var(--background-color);
   border: 1px solid #eeeeee;
 }
+
+/*portfolio*/
 figure {
   margin: 0;
 }
@@ -473,7 +485,12 @@ figure {
 }
 .pad-size {
   width: 370px;
-  margin-top: 30px;
+}
+.pad-size:hover,:focus {
+  background:var(--background-color);
+  border: 1px solid #EEEEEE;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .img-portfolio1 {
