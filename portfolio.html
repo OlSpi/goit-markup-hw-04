@@ -18,29 +18,42 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header-border">
+    <header>
       <div class="container">
-      <div class="boxflex">
-        <a href="index.html" class="studio-link"
-          >Web<span class="color-studio">Studio</span></a
-        >
-        <nav>
-        <ul class="menu">
-            <li>
-              <a href="" class="link">Agencja</a>
-            </li>
-            <li><a href="" class="link">Portfolio</a></li>
-            <li><a href="" class="link">Kontakty</a></li>
-          </ul>
-        </nav>
-        <div class="menu2">
-            <a href="mailto:info@devstudio.com" class="mail-tel"
-            >info@devstudio.com</a
+        <div class="boxflex">
+          <a href="index.html" class="studio-link"
+            >Web<span class="color-studio">Studio</span></a
           >
-          <a href="tel:+48111111111" class="mail-tel">+48 111 111 111</a>
+          <nav>
+            <ul class="menu">
+              <li><a href="" class="link">Agencja</a></li>
+              <li>
+                <a href="portfolio.html" class="link">Portfolio</a>
+              </li>
+              <li><a href="" class="link">Kontakty</a></li>
+            </ul>
+          </nav>
+
+          <ul class="menu2">
+            <li>
+              <a class="mail-tel" href="mailto:info@devstudio.com">
+                <svg width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li>
+              <a class="mail-tel" href="tel:+48111111111">
+                <svg width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +48 111 111 111
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </div>
     </header>
     <main class="section">
       <section>
@@ -208,21 +221,57 @@
       </div>
     </section>
     </main>
-    <footer>
-      <div class="footer">
-          <div class="container">
-      <a href="index.html" class="studio-link2">
-        Web<span class="color-studio2">Studio</span></a
-      >
-      </div>
-      <address>
-        <div class="container">
-        <p class="address">m.Warszawa, Aleje Jerozolimskie 21</p>
-        <p class="mail-tel-color">info@example.com</p>
-        <p class="mail-tel-color"> +48 111 111 111</p>
-        </div>
-      </address>
-    </div>
-    </footer>
+    <footer class="footer">
+      <div class="container flex-footer">
+     <section>
+       <ul>
+         <li>
+       <a href="index.html" class="studio-link2">
+         Web<span class="color-studio2">Studio</span></a
+       >
+     </li>
+         <li>
+         <p class="address">m.Warszawa, Aleje Jerozolimskie 21</p>
+         </li>
+         <li>
+         <p class="mail-tel-color">info@example.com</p></li>
+         
+         <li>
+         <p class="mail-tel-color">+48 111 111 111</p></li>
+     </ul>
+   </section>
+   
+<section class="size-social">
+ 
+       <p class="text-social-footer">Dołac do nas</p>
+
+       <ul class="flex-social-footer">
+         <li class="social-footer">
+           <svg width="20" height="20">
+             <use href="images/icons.svg#icon-instagram-2"></use>
+           </svg>
+         </li>
+         <li class="social-footer">
+           <svg width="20" height="20">
+             <use href="images/icons.svg#icon-twitter-1 "></use>
+           </svg>
+         </li>
+         <li class="social-footer">
+           <svg width="20" height="20">
+             <use href="images/icons.svg#icon-facebook-1 "></use>
+           </svg>
+         </li>
+         <li class="social-footer">
+           <svg width="20" height="20">
+             <use href="images/icons.svg#icon-linkedin-1 "></use>
+           </svg>
+         </li>
+    
+     </div>
+   </section>
+   </li>
+ </ul>
+   </div>
+ </footer>
   </body>
 </html>
