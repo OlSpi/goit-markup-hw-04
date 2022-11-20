@@ -261,8 +261,6 @@ body {
 
 /*OUR CLIENTS*/
 
-
-
 .icon-logo {
   fill: var(--icon-color);
   border: 1px solid var(--icon-color);
@@ -278,6 +276,7 @@ body {
 .icon-logo:hover,
 .icon-logo:focus {
   fill: var(--link-color);
+  border: 1px solid var(--link-color);
   cursor: pointer;
 }
 
@@ -357,7 +356,6 @@ body {
 .social-footer-icon:focus {
   fill: var(--background-color);
   background-color: var(--link-color);
- 
 }
 /*BUTTONS*/
 .flex-button {
