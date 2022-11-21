@@ -176,10 +176,18 @@ body {
 }
 /*OUR ASPECTS*/
 
+.aspects-icon {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .aspects-reset-padding {
   padding-bottom: 0;
 }
-
 .aspects-title {
   font-weight: 700;
   font-size: 14px;
@@ -262,22 +270,20 @@ body {
 /*OUR CLIENTS*/
 
 .icon-logo {
+  width: 170px;
+  height: 92px;
   fill: var(--icon-color);
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-  width: 170px;
-  height: 92px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-right: 32px;
-  padding-left: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-logo:hover,
 .icon-logo:focus {
   fill: var(--link-color);
   border: 1px solid var(--link-color);
-  cursor: pointer;
 }
 
 /*FOOTER*/
@@ -318,7 +324,7 @@ body {
 
 .footer-mail-tel:hover,
 .footer-mail-tel:focus {
-  color: var(--link-color);
+  color: var(--l ink-color);
 }
 
 .social-footer {
@@ -399,6 +405,10 @@ body {
   background: var(--background-color);
   flex-basis: calc((100% - 63px) / 3);
 }
+.card-item:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .card-item img {
   display: block;
 }
