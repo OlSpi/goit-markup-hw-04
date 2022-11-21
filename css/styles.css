@@ -324,7 +324,7 @@ body {
 
 .footer-mail-tel:hover,
 .footer-mail-tel:focus {
-  color: var(--l ink-color);
+  color: var(--link-color);
 }
 
 .social-footer {
